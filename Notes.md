@@ -114,7 +114,62 @@ a(i)
 - no duplicates
 - immutable elements
 - but set itself is mutable add / remove items from it 
-- union intersection symm diff
+- union , intersection , symm diff
+
+## set methods
+- add() 
+- clear
+- copy() shallow copy
+- difference() return the diff of 2 or more sets as a new set
+- difference_update() remove all ele of other set from this
+- discard() remove an ele is it's a member
+- intersection() _update()
+- isdisjoint() true if 2 sets have a null inters
+- issubset()
+
+
+- issuperset() True if this set contains another
+- pop() remove arbitrary ele , KeyError if set is empty()
+- remove() ele, KeyError
+- symmetric_difference() as a new set, _update()
+- union()
+- update() update a set with the union of itself and other
+
+- all() - returns true if all ele are true
+- any()
+- enumerate()
+- max()
+- sorted() - new set !
+- sum()
+
+### set can't contain lists as ele !!! bcoz lists are immutable ;)
+### we can make sets from a list
+### we can make a list from a set
+
+```py
+my_set.add(77)
+my_set.update([10,20,30],{10,20,30}) # list gets destructured & then gets added
+
+my_set.remove(5) // will throe error
+my_set.discard(5) // no error !!
+
+
+
+
+```
+
+
+# find the common factors of 2 numbers 
+> Sets
+- to find the factors of both the numbers -> 2 set (unique)
+- intersection !!
+> Math:  Common factors of 2 no.s are all the factors of their gcd 
+- make a for loop from 1 to sqrt(n) 
+- y sqrt(n) 
+- fact : if a number has a factor in the range (1,sqrt(n)) another factor lies in (sqrt(N),N)
+-   2 8*8 32    64
+-   [1 , sqrt(n) ) => nf+=2
+-   if(n== sqrt(n)*sqrt(n)) nf++;
 
 generator
 
